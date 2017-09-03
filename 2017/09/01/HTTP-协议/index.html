@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="HTTP 协议 Web客户端和服务器是如何通信的 Web页面的资源来自何方 Web事务是怎样工作的 HTTP通信所使用的报文格式 底层TCP网络传输 不同的HTTP协议变体   HTTP是什么？超文本传输安全协议, Web客户端和服务器是通过HTTP相互通信的，也需要遵守HTTP的规则。 简单的说，常见的客户端就是Web浏览器，我们在地址栏输入网址，点击Enter的动作就是向这个网址所在的服务器发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/09/01/hello-world/index.html">
+<meta property="og:title" content="HTTP 协议">
+<meta property="og:url" content="http://yoursite.com/2017/09/01/HTTP-协议/index.html">
 <meta property="og:site_name" content="Superchilli&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="HTTP 协议 Web客户端和服务器是如何通信的 Web页面的资源来自何方 Web事务是怎样工作的 HTTP通信所使用的报文格式 底层TCP网络传输 不同的HTTP协议变体   HTTP是什么？超文本传输安全协议, Web客户端和服务器是通过HTTP相互通信的，也需要遵守HTTP的规则。 简单的说，常见的客户端就是Web浏览器，我们在地址栏输入网址，点击Enter的动作就是向这个网址所在的服务器发">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-01T12:02:16.000Z">
+<meta property="og:updated_time" content="2017-09-03T11:53:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="HTTP 协议">
+<meta name="twitter:description" content="HTTP 协议 Web客户端和服务器是如何通信的 Web页面的资源来自何方 Web事务是怎样工作的 HTTP通信所使用的报文格式 底层TCP网络传输 不同的HTTP协议变体   HTTP是什么？超文本传输安全协议, Web客户端和服务器是通过HTTP相互通信的，也需要遵守HTTP的规则。 简单的说，常见的客户端就是Web浏览器，我们在地址栏输入网址，点击Enter的动作就是向这个网址所在的服务器发">
 
 
 
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/01/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/01/HTTP-协议/"/>
 
 
 
 
 
-  <title>Hello World | Superchilli's Blog</title>
+  <title>HTTP 协议 | Superchilli's Blog</title>
   
 
 
@@ -282,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/01/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/01/HTTP-协议/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Roseluo">
@@ -299,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">HTTP 协议</h1>
         
 
         <div class="post-meta">
@@ -311,7 +311,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-01T20:02:16+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-01T22:30:55+08:00">
                 2017-09-01
               </time>
             
@@ -349,15 +349,73 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h1 id="HTTP-协议"><a href="#HTTP-协议" class="headerlink" title="HTTP 协议"></a>HTTP 协议</h1><ul>
+<li>Web客户端和服务器是如何通信的</li>
+<li>Web页面的资源来自何方</li>
+<li>Web事务是怎样工作的</li>
+<li>HTTP通信所使用的报文格式</li>
+<li>底层TCP网络传输</li>
+<li>不同的HTTP协议变体</li>
+</ul>
+<hr>
+<p>HTTP是什么？<br>超文本传输安全协议, Web客户端和服务器是通过HTTP相互通信的，也需要遵守HTTP的规则。</p>
+<p>简单的说，常见的客户端就是Web浏览器，我们在地址栏输入网址，点击Enter的动作就是向这个网址所在的服务器发起请求，来获取这个网页上的资源。服务器接收到这个请求后，根据请求的内容，发送相应的资源文件给到客户端，于是我就可以在浏览器上查看这个网站的内容了。</p>
+<p>一般我们说网址都是说URL，第一次看到URI这个概念的时候有点发懵。URI: Uniform Resource Identifier，统一资源标识符。URI有2中形式，一种是URL，另外一种是URN。</p>
+<p>URL的格式：<a href="http://superchilli.github.io/blog" target="_blank" rel="external">http://superchilli.github.io/blog</a><br>http代表访问资源所使用的协议类型，通常就是HTTP协议。<br>superchilli.github.io 代表这个网站的地址。<br>/blog 代表了具体资源所在的位置。</p>
+<p>现在，几乎所有的URI都是URL。</p>
+<p>URN是作为特点内容的唯一名称使用的，与资源所在的位置无关。</p>
+<hr>
+<h3 id="事务："><a href="#事务：" class="headerlink" title="事务："></a>事务：</h3><p>一个HTTP事务由一条从客户端发往服务器的请求命令和一个从服务器发挥客户端的响应结果组成。<br>这种通讯是通过名为HTTP报文的格式化数据块进行的。</p>
+<p>HTTP支持几种不同的请求命令，这些命令被称为HTTP方法。每条HTTP请求报文都包含一个方法，这个方法会告诉服务器要执行什么动作。<br>5种常见的HTTP方法：</p>
+<ul>
+<li>GET 从服务器向客户端发送命名资源</li>
+<li>PUT 将来自客户端的数据存储到一个命名的服务器资源中去</li>
+<li>DELETE 从服务器中删除命名资源</li>
+<li>POST 将客户端数据发送到一个服务器网关应用程序</li>
+<li>HEAD 仅发送命名资源相应中的HTTP首部</li>
+</ul>
+<p>状态码：每条HTTP相应报文返回时都会携带一个状态码，状态码是一个三位数字的代码。告知客户端请求是否成功，或者是否需要采取其他动作。</p>
+<p>HTTP报文都是纯文本，由一行一行的字符串组成。</p>
+<p>HTTP报文由三部分组成：起始行，首部字段，主体。</p>
+<p>HTTP是一个应用协议层，无需操心网络通信的具体细节，而是交给TCP/IP协议。</p>
+<p>TCP提供了：</p>
+<ul>
+<li>无差错的数据传输；</li>
+<li>按需传输（数据总是会按照发送的顺序到达）；</li>
+<li>未分段的数据流（可以在任意时刻以任意尺寸将数据发送出去）。</li>
+</ul>
+<p>只要建立了TCP链接，客户端和服务器之间的报文交换就不会丢失，不会破坏，也不会在接收时出现错序了。</p>
+<p>在HTTP客户端向服务器发送报文之前，需要用IP地址和端口号在客户端和付钱之间建立一条TCP/IP连接。</p>
+<p>在TCP中，需要知道服务器的IP地址以及在服务器上允许的特定软件的相关TCP端口号。服务器的IP地址和端口号是依靠URL获取的。HTTP的URL中没有端口号时，可以假设默认端口号是80。</p>
+<p>具体的步骤：  </p>
+<ol>
+<li>浏览器从URL中解析出服务器的主机名  </li>
+<li>浏览器将服务器的主机名转换成服务器的IP地址  </li>
+<li>浏览器将端口号从URL中解析出来  </li>
+<li>浏览器建立一条与Web服务器的TCP连接  </li>
+<li>浏览器向服务器发送一条HTTP请求报文  </li>
+<li>服务器向浏览器回送一条HTTP响应报文  </li>
+<li>关闭连接，浏览器显示文档  </li>
+</ol>
+<h3 id="协议版本"><a href="#协议版本" class="headerlink" title="协议版本"></a>协议版本</h3><p>HTTP/0.9<br>HTTP的1991原型版本称为HTTP/0.9。这个协议有很多严重的设计缺陷，只应该用于与老客户端的交互。HTTP/0.9只支持GET方法，不支持多媒体内容的MIME类型、各种HTTP首部或者版本号。  </p>
+<p>HTTP/1.0  </p>
+<p>1.0是第一个得到广泛使用的HTTP版本。HTTP/1.0添加了版本号，各种HTTP首部，一些额外的方法，以及对多媒体对象的处理。</p>
+<p>HTTP/1.0+  </p>
+<p>在20世纪90年代中叶，很多流行的Web客户端和服务器都在飞快的向HTTP中添加各种特性，以满足需要。这种非正式的HTTP扩展版本通常称为HTTP/1.0+  </p>
+<p>HTTP/1.1  </p>
+<p>HTTP/1.1重点关注的是校正HTTP设计中的结构性缺陷，明确语义，引入重要的性能优化措施，并删除一些不好的特性。HTTP/1.1是当前使用的HTTP版本。  </p>
+<p>HTTP-NG（又名HTTP/2.0）  </p>
+<p>HTTP-NG是HTTP/1.1后继结构的原型建议，它重点关注的是性能的大幅优化，以及更强大的服务器逻辑远程执行框架。  </p>
+<h3 id="Web的结构组件"><a href="#Web的结构组件" class="headerlink" title="Web的结构组件"></a>Web的结构组件</h3><p>代理：位于客户端和服务器之间的HTTP中间实体。接收所有客户端的HTTP请求，并将这些请求转发给服务器。<br>缓存：HTTP的仓库，使常用页面的副本可以保存在离客户端更近的地方。客户端从附近的缓存下载文档会比从远程Web服务器下载快得多。<br>网关：连接其他应用程序的特殊Web服务器。<br>隧道：对HTTP通信报文进行盲转发的特殊代理。<br>Agent代理：发起自动HTTP请求的半智能Web客户端。  </p>
+<h3 id="状态码"><a href="#状态码" class="headerlink" title="状态码"></a>状态码</h3><ul>
+<li>100-199 信息提示  </li>
+<li>200-299 成功  </li>
+<li>300-399 重定向  </li>
+<li>400-499 客户端错误  </li>
+<li>500-599 服务器错误</li>
+</ul>
+<p>HTTP请求格式:<br><code>&lt;method&gt; &lt;request-URL&gt; &lt;version&gt;</code><br><code>&lt;headers&gt;</code><br><code>&lt;entity-body&gt;</code>  </p>
+<p>HTTP相应格式：<br>`&lt;</p>
 
       
     </div>
@@ -382,15 +440,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/09/01/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/01/HTTP-协议/" rel="prev" title="HTTP 协议">
-                HTTP 协议 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -541,7 +599,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP-协议"><span class="nav-number">1.</span> <span class="nav-text">HTTP 协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事务："><span class="nav-number">1.0.1.</span> <span class="nav-text">事务：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#协议版本"><span class="nav-number">1.0.2.</span> <span class="nav-text">协议版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Web的结构组件"><span class="nav-number">1.0.3.</span> <span class="nav-text">Web的结构组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#状态码"><span class="nav-number">1.0.4.</span> <span class="nav-text">状态码</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
