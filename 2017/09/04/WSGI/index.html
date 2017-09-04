@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Tech, Python, Flask, Life" />
+  <meta name="keywords" content="Web," />
 
 
 
@@ -94,17 +94,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="WSGI 是什么？WSGI 不是服务器，不是Python的模块，不是一个框架，不是API也不是任何类型的软件，它只是服务器和应用程序通信的接口规范。   这个规范分为2部分：为Web服务器端编写的第一部分说：“OK，如果你想处理一个WSGI应用程序，这是软件在加载时会如何思考，这是你必须为应用程序提供的东西，在这里是您可以期望每个应用程序拥有的界面（布局），以及，如果出现问题，应用程序将如何思考以">
+<meta name="keywords" content="Web">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/09/01/hello-world/index.html">
+<meta property="og:title" content="WSGI partⅠ">
+<meta property="og:url" content="http://yoursite.com/2017/09/04/WSGI/index.html">
 <meta property="og:site_name" content="Superchilli&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="WSGI 是什么？WSGI 不是服务器，不是Python的模块，不是一个框架，不是API也不是任何类型的软件，它只是服务器和应用程序通信的接口规范。   这个规范分为2部分：为Web服务器端编写的第一部分说：“OK，如果你想处理一个WSGI应用程序，这是软件在加载时会如何思考，这是你必须为应用程序提供的东西，在这里是您可以期望每个应用程序拥有的界面（布局），以及，如果出现问题，应用程序将如何思考以">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-01T12:02:16.000Z">
+<meta property="og:updated_time" content="2017-09-04T05:36:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="WSGI partⅠ">
+<meta name="twitter:description" content="WSGI 是什么？WSGI 不是服务器，不是Python的模块，不是一个框架，不是API也不是任何类型的软件，它只是服务器和应用程序通信的接口规范。   这个规范分为2部分：为Web服务器端编写的第一部分说：“OK，如果你想处理一个WSGI应用程序，这是软件在加载时会如何思考，这是你必须为应用程序提供的东西，在这里是您可以期望每个应用程序拥有的界面（布局），以及，如果出现问题，应用程序将如何思考以">
 
 
 
@@ -133,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/01/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/04/WSGI/"/>
 
 
 
 
 
-  <title>Hello World | Superchilli's Blog</title>
+  <title>WSGI partⅠ | Superchilli's Blog</title>
   
 
 
@@ -282,7 +283,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/01/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/04/WSGI/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Roseluo">
@@ -299,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">WSGI partⅠ</h1>
         
 
         <div class="post-meta">
@@ -311,8 +312,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-01T20:02:16+08:00">
-                2017-09-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-04T12:21:30+08:00">
+                2017-09-04
               </time>
             
 
@@ -330,9 +331,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/09/01/hello-world/#comments" itemprop="discussionUrl">
+                <a href="/2017/09/04/WSGI/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/01/hello-world/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/09/04/WSGI/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,15 +361,13 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="WSGI-是什么？"><a href="#WSGI-是什么？" class="headerlink" title="WSGI 是什么？"></a>WSGI 是什么？</h2><p>WSGI 不是服务器，不是Python的模块，不是一个框架，不是API也不是任何类型的软件，它只是服务器和应用程序通信的接口规范。  </p>
+<p>这个规范分为2部分：<br>为Web服务器端编写的第一部分说：“OK，如果你想处理一个WSGI应用程序，这是软件在加载时会如何思考，这是你必须为应用程序提供的东西，在这里是您可以期望每个应用程序拥有的界面（布局），以及，如果出现问题，应用程序将如何思考以及如何期待它的行为。“    </p>
+<p>第二部分是针对Python应用软件编写的，他说：“好的，如果你想接入一个WSGI服务器，那么这个服务器在与你联系的时候会这么想，这是服务器必须提供的东西，这是您可以期望每个服务器拥有的界面（布局），而且，如果出现任何问题，这里应该如何运行，这里应该告诉服务器。”</p>
+<p>如果一个应用程序（或框架或工具包）是按照WSGI的规范写入，那么这个应用程序可以在任何写入了WSGI服务器上运行。<br>WSGI应用程序可以堆栈，位于堆栈中间的称为中间件，中间件必须实现WSGI接口，服务器和应用程序的两端。位于上层的中间件可以作为服务器，位于下层的中间件可以作为应用程序。   </p>
+<p>一个符合WSGI标准的服务器，只接受从客户端发起的请求，传递给应用程序，再将回应从应用程序发送给客户端。其他的细节工作都交给中间件或应用程序来完成。   </p>
+<h2 id="为什么要使用WSGI"><a href="#为什么要使用WSGI" class="headerlink" title="为什么要使用WSGI"></a>为什么要使用WSGI</h2><p>一个传统的Web服务器不知道如何启动Python应用程序。1990年后期，Grisha Trubetskoy 编写了一个名为 mod_python 的 Apache 模块来执行Python代码。mod_python 流行了一段时间，由于不够规范化和存在安全隐患，所以 Python 社区提出了使用WSGI作为模块和容器可以实现的接口。</p>
+<p>文章内容来自：<br><a href="http://wsgi.tutorial.codepoint.net/intro" target="_blank" rel="external">WSGI-Introduction</a><br><a href="https://www.fullstackpython.com/wsgi-servers.html" target="_blank" rel="external">Full Stack Python</a><br><a href="https://stackoverflow.com/questions/4929626/what-are-wsgi-and-cgi-in-plain-english" target="_blank" rel="external">What are WSGI and CGI in plain English?-Stack Overflow</a></p>
 
       
     </div>
@@ -384,6 +383,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Web/" rel="tag"># Web</a>
+          
+        </div>
+      
 
       
       
@@ -393,15 +398,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/09/01/HTTP-协议/" rel="next" title="HTTP 协议">
+                <i class="fa fa-chevron-left"></i> HTTP 协议
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/01/HTTP-协议/" rel="prev" title="HTTP 协议">
-                HTTP 协议 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -568,7 +573,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#WSGI-是什么？"><span class="nav-number">1.</span> <span class="nav-text">WSGI 是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要使用WSGI"><span class="nav-number">2.</span> <span class="nav-text">为什么要使用WSGI</span></a></li></ol></div>
             
 
           </div>
@@ -711,9 +716,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/09/01/hello-world/';
-          this.page.identifier = '2017/09/01/hello-world/';
-          this.page.title = 'Hello World';
+          this.page.url = 'http://yoursite.com/2017/09/04/WSGI/';
+          this.page.identifier = '2017/09/04/WSGI/';
+          this.page.title = 'WSGI partⅠ';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://superchilli.disqus.com/embed.js';
